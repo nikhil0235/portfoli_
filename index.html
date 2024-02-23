@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="shortcut icon" type="image/png" href="ic.png">
+        <link rel="stylesheet" href='./files/style.css'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        
+    </head>
+    <body>
+        <!-- Particle Animation Container -->
+<div id="particles-js"></div>
+
+<!-- Particle Animation Scripts -->
+<script src="./particles.js"></script>
+<script src="./js/app.js"></script>
+
+<!-- Particle Animation Stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+</script>
+        <header class="header">
+            
+            <a href="#" class="logo">_Coder_</a>
+            <nav class="navbar" id="myLinks">
+                <a href="#Home" style="--i:1" class="active" >Home</a>
+                <a href="#About" style="--i:2">About</a>
+                <a href="#Skills" style="--i:3">Skills</a>
+                <a href="#Projects" style="--i:4">Projects</a>
+                <a href="#Contact" style="--i:5">Contact</a>
+            </nav>
+        </header>
+
+
+        <section class="home" id="Home">
+            <div class="home-content">
+                
+                <h3>Hello, It's Me</h3>
+                <h1>NIKHIL RAJ</h1>
+                <h4 style="--i:6">I'm a student who is<br>
+                    passionate in <span class="text"></span></h4>
+                
+                <div class="img">
+                     <img src="./img/cropedpic.png" class="responsive">
+                </div>
+
+                <div class="home-sci">
+                    <a href="https://www.linkedin.com/in/nikhil-raj-18365a226/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/nikhil_rajput011/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/nikhil0235"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1MHHjSDxBVoa3YFrCXx5A7fdfuzaz48lY/view?usp=drive_link" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="about" id="About">
+                <div class="about-img">
+                    <img src="./img/midclg.jpg" class="abt-res">
+                </div>
+                <div class="about-text">
+                    <h2>About <span>Me</span></h2>
+                    <p>
+                        My Name is Nikhil Raj, I am currently pursuing Btech at National Institute of technology Delhi with a versatile skill set in computer science. Proficient in C/C++ and adept at solving 750+ problems on platforms like LeetCode and GeeksforGeeks, I bring expertise in database management, operating systems, object-oriented programming, and SQL. Additionally, I excel in developing web applications using the MERN stack. My well-rounded skills are geared for impactful contributions to the field of computer science.<br>
+                        <a href="https://drive.google.com/file/d/1MHHjSDxBVoa3YFrCXx5A7fdfuzaz48lY/view?usp=drive_link" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="Skills">
+            <h1 class="subtitle">My <span>Skills</span></h1>
+            <div class="sec">
+                <div class="container1">
+                    <h1 class="heading1">Technical Skills</h1>
+                    <div class="Technical-bars">
+                        <div class="bar"><i class='bx bxl-c-plus-plus'style="color: #3db2fc;"></i>
+                            <div class="info">
+                                <span>C/C++ <span class="addc"></span></span>
+                            </div>
+                           
+                        </div>
+                        <div class="bar"><i class='bx bxl-react' style="color: #61dafb;"></i>
+                            <div class="info">
+                                <span>React.js <span class="addc"></span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="bar"><i class='bx bxl-react' style="color: #61dafb;"></i>
+                            <div class="info">
+                                <span>React Native <span class="addc"></span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="bar"><i class='bx bxl-mongodb' style="color: #4DB33D;"></i>
+                            <div class="info">
+                                <span>MongoDB <span class="addc"></span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="bar"><i class='bx bxl-mysql' style="color: #00c33e;"></i>
+                            <div class="info">
+                                <span>MySQL <span class="addc"></span></span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="bar"><i class='bx bx-data' style="color: #865CD6;"></i>
+                            <div class="info">
+                                <span>DSA <span class="addc"></span></span>
+                            </div>
+                        </div>
+                        
+                        <div class="bar"><i class='bx bxl-html5' style="color: #c9332e;"></i>
+                            <div class="info">
+                                <span>HTML <span class="addhtml"></span></span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-css3' style="color: #147bbc;"></i>
+                            <div class="info">
+                                <span>CSS <span class="addcss"></span></span>
+                            </div>
+                        
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-python' style="color: #b0bc1e;"></i>
+                            <div class="info">
+                                <span>Python <span class="addpy"></span></span>
+                            </div>
+                           
+                        </div>
+
+                        <div class="bar"><i class='bx bxl-javascript' style="color: #F0DB4F;"></i>
+                            <div class="info">
+                                <span>JavaScript <span class="addc"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container2">
+                    <h1 class="heading1">Professional Skills</h1>
+                    <div class="radial-bars">
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-1" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">80%</div>
+                            <div class="text">Communication</div>
+                        </div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="80" r="80"></circle>
+                            </svg>
+                            <div class="percentage">95%</div>
+                            <div class="text">Teamwork</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Projects">
+            <div id="portfolio" class="services">
+                <div class="main-text" id="serv">
+                    <h2>My <span>Projects</span></h2>
+                    <div class="serv-container">
+                        <div class="row">
+                            <img src="./img/FMD.png">
+                            <div class="layer">
+                                <h5>Turbo_Tracker</h5>
+                                <p>Turbo Tracker, the MERN stack-powered inventory app with category-wise tracking and secure authentication.</p>
+
+                                <a href="https://turbo-tracker-app-frontend.vercel.app/" target="_blank" ><i  style="color: aliceblue;">Link</i></a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <img src="./img/DD.png">
+                            <div class="layer">
+                                <h5>AI Vocie Assistant</h5>
+                                <p>React Native, DALL·E AI, and ChatGPT seamlessly combine for dynamic, voice-controlled experiences with visually captivating elements, redefining user engagement.</p>
+
+                                <a href="https://github.com/nikhil0235/AI_Voicee_Assistant" target="_blank"><i  style="color: aliceblue;">Link</i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <img src="./img/DA.png">
+                            <div class="layer">
+                                <h5>Car Game</h5>
+                                <p>
+                                    Introducing an immersive car game with a responsive interface – click 'Start Game,' maneuver your car with arrow keys, and track your score.</p>
+
+                                    <a href="https://transcendent-cupcake-886cec.netlify.app/" target="_blank"><i  style="color: aliceblue;">Link</i></a>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="./img/SA.png">
+                            <div class="layer">
+                                <h5>Sorting_Visualizer</h5>
+                                <p>Explore sorting techniques through seamless animations, simplifying complexities. Witness the art of sorting come alive in a mesmerizing display of order and precision.</p>
+
+                                <a href="https://sortingggg.netlify.app/" target="_blank"><i  style="color: aliceblue;">Link</i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Services">
+            <div class="project">
+                <div class="container">
+                    <h1 class="sub-title">My <span>Services</span></h1>
+                    <div class="prj-list">
+                        <div>
+                            <i class='bx bx-code' style="color: #00eeff;"></i>
+                            <h2>Frontend Development</h2>
+                            <p>Plan, create and code internet sites and web pages with modern and artful design.
+                                with React Js, Sassy CSS.
+                            </p>
+                            
+                        </div>
+                        <div>
+                            <i class='bx bx-cube' style="color: #00eeff;"></i>
+                            <h2>Backend Development</h2>
+                            <p>Specialized in crafting robust backend solutions using Node.js, Express, and databases such as MongoDB and MySQL.</p>
+                            
+                        </div>
+                        <div>
+                            <i class='bx bxl-android' style="color: #00eeff;"></i>
+                            <h2>App Development</h2>
+                            <p>Mobile application developer with knowledge of React Native and Android Studio.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contacts" id="Contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <h4>Let's Work Together</h4>
+                <div class="contact-list">
+                    <li><i class='bx bxs-send'></i>rajnikhil705@gmail.com</li>
+                    <li><i class="bx bxs-phone-call" ></i>9693659109</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/nikhil-raj-18365a226/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/nikhil_rajput011/"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://github.com/nikhil0235"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+               </div>
+            </div>
+            
+        </section>
+        
+        <div class="last-text">
+            <p>Software developer <i class='bx bx-copyright' style="color: white;"></i> 2024</p>
+        </div>
+        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+        <script src="./files/script.js"></script>
+    </body>  
+</html>
+
