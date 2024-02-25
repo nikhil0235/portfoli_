@@ -163,6 +163,7 @@ body {
 }
 
 .btn-box {
+    margin-top: 30px;
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
@@ -1131,7 +1132,7 @@ body {
     }
     .container1 {
         width: 600px;
-        max-height: 500px;
+        max-height: 880px;
         padding: 20px;
         margin-left: 50px;
     }
@@ -1267,9 +1268,8 @@ body {
         font-size: 30px;
         letter-spacing: 5px;
     }
-    .btn-box{
-        margin-top: 30px;
-    }
+
+
     .about-text p {
         font-size: 15px;
         line-height: normal;
@@ -1288,7 +1288,7 @@ body {
     }
     .container1 {
         width: 600px;
-        max-height: 500px;
+        max-height: 800px;
         padding: 20px;
         margin-left: 50px;
     }
