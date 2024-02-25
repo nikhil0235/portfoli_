@@ -1085,7 +1085,7 @@ body {
         font-size: 45px;
         font-weight: 200;
     }
-    .img{
+     .img{
         width: 250px;
         position: relative;
         left: -0%;
@@ -1093,7 +1093,9 @@ body {
         padding-bottom: 30px;
         padding-left: 0;
         margin-left: 0;
+        border: 4px solid cyan;
     }
+
     .btn-box:hover {
         box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 15pc cyan, 0 0 20px cyan, 0 0 25px cyan;
     }
