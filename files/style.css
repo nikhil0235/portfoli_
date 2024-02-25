@@ -348,6 +348,11 @@ body {
     flex: 1;
 }
 
+.bar i {
+    font-size: 2em;
+}
+
+
 /* Assuming each .bars element represents an item in the grid */
 .bar {
     margin-top: 25px;
@@ -600,11 +605,7 @@ body {
     font-weight: 13px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
-    border: #0ef 5px solid;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border: #0ef 4px solid;
 }
 
 .row img {
@@ -615,6 +616,34 @@ body {
     transition: transform 0.5s;
     
 }
+.project-info h3{
+    margin-top: 6px;
+   text-align: center;
+}
+.project_tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  /* Adjust as needed */
+    align-items: center;  /* Adjust as needed */
+    margin: 5px;
+}
+
+
+.project_tech .tech-item {
+    flex: 1;  /* Adjust the width as needed */
+    height: 50px;    /* Adjust the height as needed */
+    margin: 5px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech-item i {
+    font-size: 4em;
+}
+
+
 
 .layer {
     width: 100%;
@@ -1000,7 +1029,7 @@ body {
 
 @media (max-width: 700px) and (min-width: 400px) {
     *{
-        overflow-x: ;
+        /* overflow-x: ; */
         overflow-y: inherit;
     }
     /*navbar*/
@@ -1122,6 +1151,10 @@ body {
         font-size: 50px;
         padding-bottom: 15px;
     }
+    .project-info {
+        text-align: justify;
+    }
+
     .layer p {
         line-height: normal;
     }
