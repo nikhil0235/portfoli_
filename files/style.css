@@ -340,6 +340,7 @@ body {
     
 } */
 .Technical-bars {
+    /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
     margin: 5px; /* Add units (e.g., pixels) to the margin */
@@ -356,6 +357,7 @@ body {
 
 /* Assuming each .bars element represents an item in the grid */
 .bar {
+    /* background-color: yellow; */
     margin-top: 25px;
     /* Additional styling for each grid item */
     width: calc(33.33% - 10px); /* Adjust the width as needed and consider margins */
@@ -370,11 +372,11 @@ body {
 }
 
 .Technical-bars .bar:first-child {
-    margin-top: 0;
+    margin-top: 25;
 }
 
 .Technical-bars .bar:last-child {
-    margin-bottom: 0;
+    margin-bottom: 25;
 }
 
 .Technical-bars .bar .info {
@@ -582,17 +584,22 @@ body {
 .main-text h2 span {
     color: #0ef;
 }
-
 .serv-container {
+    /* background-color: red; */
+    margin: 40px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    gap: 40px; /* Adds margin between grid items */
     align-items: center;
     justify-content: space-around;
 }
 
 .row {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 250px;
+    
     align-items: center;
     justify-content: center;
     position: relative;
@@ -600,7 +607,6 @@ body {
     cursor: pointer;
     padding: 0px;
     overflow: hidden;
-    margin-bottom: 12px;
     background-color: transparent;
     font-size: 13px;
     font-weight: 13px;
@@ -669,7 +675,7 @@ body {
 
 .layer h5 {
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
 }
